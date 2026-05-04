@@ -366,7 +366,7 @@ export default function HomePage() {
               { q: "Why local-only?", a: "Token usage data tells a lot about what you're working on. Sending it to a server you don't own is the wrong default. Local-first means you can audit every byte." },
               { q: "Do I have to connect a provider account?", a: "No. Runtime tracking starts the moment you run a CLI session — no auth, no OAuth. Account connection is optional and only adds plan-quota and credit-balance views on top." },
               { q: "Does it work without the proxy?", a: "Yes for Claude and Codex (session log watchers cover both). The proxy adds real-time SSE capture and is currently required to track Gemini." },
-              { q: "How does this compare to ccusage / CodexBar?", a: "CodexBar is a thin menu-bar limit display across many providers. ccusage is a CLI usage scanner. OhMyToken is a full dashboard — heatmap, treemap, cache analysis, evidence scoring — focused on the three providers you spend most of your day in." },
+              { q: "How does this compare to ccusage?", a: "ccusage is a CLI usage scanner. OhMyToken is a full local dashboard — heatmap, treemap, cache analysis, evidence scoring — focused on the three providers you spend most of your day in." },
               { q: "Why Apache-2.0 and not MIT?", a: "Apache-2.0 includes an explicit patent grant that better fits a tool that handles AI provider traffic. MIT works fine; Apache-2.0 is slightly stricter on attribution and provides patent clarity." },
               { q: "What's on the roadmap?", a: "Dedicated Gemini session watcher, terminal HUD plugin, broader provider coverage, and Windows/Linux ports based on community demand." },
             ].map((item) => (
@@ -418,7 +418,7 @@ export default function HomePage() {
           </div>
           <div className="mt-8 pt-6 border-t border-white/5 flex flex-col md:flex-row md:items-center md:justify-between gap-3 text-xs text-gray-600">
             <div>© 2026 mercleodev. Released under the Apache License 2.0.</div>
-            <div>Inspired by ccusage &amp; CodexBar. Not affiliated with Anthropic, OpenAI, or Google.</div>
+            <div>Not affiliated with Anthropic, OpenAI, or Google.</div>
           </div>
         </div>
       </footer>
